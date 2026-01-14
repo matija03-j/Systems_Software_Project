@@ -1,0 +1,13 @@
+OBJV1
+SECTIONS 2
+.section isr size=16 addr=0
+data: 04 00 5F 93 FE CA AD DE 04 00 2E 96 08 00 FE 93
+.section text size=32 addr=0
+data: 04 00 1F 93 00 00 00 F0 00 00 11 94 04 00 2F 93 A5 A5 A5 A5 00 00 22 94 00 00 00 10 00 00 00 00
+
+SYMBOLS 4
+name=ISR bind=LOCAL section=isr value=0
+name=.isr bind=GLOBAL section=isr value=0
+name=RESUME bind=LOCAL section=text value=28
+name=.text bind=GLOBAL section=text value=0
+RELOCS 0

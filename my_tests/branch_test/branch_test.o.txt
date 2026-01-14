@@ -1,0 +1,10 @@
+OBJV1
+SECTIONS 1
+.section text size=44 addr=0
+data: 05 00 10 91 05 00 20 91 07 00 30 91 04 20 F1 31 06 00 30 91 04 20 F1 32 03 00 30 91 00 20 F3 3B 00 00 00 00 09 00 30 91 00 00 00 00
+
+SYMBOLS 2
+name=LEND bind=LOCAL section=text value=40
+name=.text bind=GLOBAL section=text value=0
+RELOCS 1
+section=text offset=32 symbol=LEND

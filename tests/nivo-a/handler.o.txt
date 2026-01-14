@@ -1,0 +1,22 @@
+OBJV1
+SECTIONS 1
+.section my_handler size=124 addr=0
+data: FC 1F E0 81 FC 2F E0 81 00 00 12 90 02 00 20 91 04 20 F1 39 04 00 F0 30 00 00 00 00 03 00 20 91 04 20 F1 39 04 00 F0 30 00 00 00 00 04 00 20 91 04 20 F1 39 04 00 F0 30 00 00 00 00 04 00 2E 93 04 00 1E 93 04 00 0E 96 08 00 FE 93 04 00 F0 21 04 00 F0 30 00 00 00 00 E0 0F F0 30 04 00 F0 21 04 00 F0 30 00 00 00 00 D0 0F F0 30 04 00 F0 21 04 00 F0 30 00 00 00 00 C0 0F F0 30
+
+SYMBOLS 9
+name=finish bind=LOCAL section=my_handler value=60
+name=handle_software bind=LOCAL section=my_handler value=108
+name=handle_terminal bind=LOCAL section=my_handler value=92
+name=handle_timer bind=LOCAL section=my_handler value=76
+name=handler bind=GLOBAL section=my_handler value=0
+name=.my_handler bind=LOCAL section=my_handler value=0
+name=isr_software bind=GLOBAL section=UND value=0
+name=isr_terminal bind=GLOBAL section=UND value=0
+name=isr_timer bind=GLOBAL section=UND value=0
+RELOCS 6
+section=my_handler offset=24 symbol=my_handler addend=76
+section=my_handler offset=40 symbol=my_handler addend=92
+section=my_handler offset=56 symbol=my_handler addend=108
+section=my_handler offset=84 symbol=isr_timer addend=0
+section=my_handler offset=100 symbol=isr_terminal addend=0
+section=my_handler offset=116 symbol=isr_software addend=0

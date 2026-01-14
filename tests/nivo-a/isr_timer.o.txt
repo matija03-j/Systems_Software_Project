@@ -1,0 +1,9 @@
+OBJV1
+SECTIONS 1
+.section isr size=4 addr=0
+data: 04 00 FE 93
+
+SYMBOLS 2
+name=isr_timer bind=GLOBAL section=isr value=0
+name=.isr bind=LOCAL section=isr value=0
+RELOCS 0

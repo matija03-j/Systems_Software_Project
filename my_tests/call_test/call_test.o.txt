@@ -1,0 +1,10 @@
+OBJV1
+SECTIONS 1
+.section text size=36 addr=0
+data: 0A 00 10 91 00 00 F0 21 00 00 00 00 00 10 11 50 00 00 00 00 00 10 11 50 00 E0 11 51 03 00 10 91 04 00 FE 93
+
+SYMBOLS 2
+name=FUNC bind=LOCAL section=text value=20
+name=.text bind=GLOBAL section=text value=0
+RELOCS 1
+section=text offset=8 symbol=FUNC

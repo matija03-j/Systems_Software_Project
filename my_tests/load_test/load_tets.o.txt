@@ -1,0 +1,8 @@
+OBJV1
+SECTIONS 1
+.section text size=36 addr=0
+data: 04 00 1F 93 44 33 22 11 00 00 21 91 FC 1F E0 81 FC FF E0 81 00 00 5E 91 00 00 35 92 04 00 45 92 00 00 00 00
+
+SYMBOLS 1
+name=.text bind=GLOBAL section=text value=0
+RELOCS 0

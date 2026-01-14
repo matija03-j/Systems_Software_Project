@@ -1,0 +1,10 @@
+OBJV1
+SECTIONS 1
+.section text size=32 addr=0
+data: 01 00 10 91 00 00 F0 38 00 00 00 00 02 00 20 91 04 00 F0 30 03 00 30 91 04 00 10 91 00 00 00 00
+
+SYMBOLS 2
+name=L1 bind=LOCAL section=text value=16
+name=.text bind=GLOBAL section=text value=0
+RELOCS 1
+section=text offset=8 symbol=L1

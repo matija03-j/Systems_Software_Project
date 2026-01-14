@@ -1,0 +1,41 @@
+OBJV1
+SECTIONS 2
+.section my_data size=28 addr=0
+data: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+.section my_code size=308 addr=0
+data: FE 0E E0 91 04 00 1F 93 00 00 00 00 00 00 11 94 00 00 00 10 01 00 10 91 FC 1F E0 81 01 00 10 91 FC 1F E0 81 04 00 F0 21 04 00 F0 30 00 00 00 F0 04 10 F0 82 04 00 F0 30 00 00 00 00 02 00 10 91 FC 1F E0 81 01 00 10 91 FC 1F E0 81 04 00 F0 21 04 00 F0 30 00 00 00 00 04 10 F0 82 04 00 F0 30 00 00 00 00 07 00 10 91 FC 1F E0 81 0B 00 10 91 FC 1F E0 81 04 00 F0 21 04 00 F0 30 00 00 00 00 04 10 F0 82 04 00 F0 30 00 00 00 00 05 00 10 91 FC 1F E0 81 19 00 10 91 FC 1F E0 81 04 00 F0 21 04 00 F0 30 00 00 00 00 04 10 F0 82 04 00 F0 30 00 00 00 00 04 00 10 91 FC 1F E0 81 18 00 10 91 FC 1F E0 81 04 00 F0 21 04 00 F0 30 00 00 00 00 04 10 F0 82 04 00 F0 30 00 00 00 00 04 00 1F 93 00 00 00 00 00 00 11 92 04 00 2F 93 00 00 00 00 00 00 22 92 04 00 3F 93 00 00 00 00 00 00 33 92 04 00 4F 93 00 00 00 00 00 00 44 92 04 00 5F 93 00 00 00 00 00 00 55 92 04 00 6F 93 00 00 00 00 00 00 66 92 04 00 7F 93 00 00 00 00 00 00 77 92 00 00 00 00
+
+SYMBOLS 15
+name=.my_data bind=LOCAL section=my_data value=0
+name=value7 bind=GLOBAL section=my_data value=24
+name=handler bind=GLOBAL section=UND value=0
+name=value4 bind=GLOBAL section=my_data value=12
+name=mathSub bind=GLOBAL section=UND value=0
+name=.my_code bind=LOCAL section=my_code value=0
+name=mathMul bind=GLOBAL section=UND value=0
+name=value3 bind=GLOBAL section=my_data value=8
+name=value6 bind=GLOBAL section=my_data value=20
+name=mathDiv bind=GLOBAL section=UND value=0
+name=value2 bind=GLOBAL section=my_data value=4
+name=value5 bind=GLOBAL section=my_data value=16
+name=my_start bind=GLOBAL section=my_code value=0
+name=mathAdd bind=GLOBAL section=UND value=0
+name=value1 bind=GLOBAL section=my_data value=0
+RELOCS 17
+section=my_code offset=8 symbol=handler addend=0
+section=my_code offset=56 symbol=value2 addend=0
+section=my_code offset=84 symbol=mathAdd addend=0
+section=my_code offset=96 symbol=value3 addend=0
+section=my_code offset=124 symbol=mathSub addend=0
+section=my_code offset=136 symbol=value4 addend=0
+section=my_code offset=164 symbol=mathDiv addend=0
+section=my_code offset=176 symbol=value5 addend=0
+section=my_code offset=204 symbol=mathDiv addend=0
+section=my_code offset=216 symbol=value6 addend=0
+section=my_code offset=224 symbol=value1 addend=0
+section=my_code offset=236 symbol=value2 addend=0
+section=my_code offset=248 symbol=value3 addend=0
+section=my_code offset=260 symbol=value4 addend=0
+section=my_code offset=272 symbol=value5 addend=0
+section=my_code offset=284 symbol=value6 addend=0
+section=my_code offset=296 symbol=value7 addend=0

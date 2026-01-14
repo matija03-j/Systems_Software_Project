@@ -1,0 +1,12 @@
+OBJV1
+SECTIONS 1
+.section math size=96 addr=0
+data: FC 2F E0 81 08 00 1E 92 0C 00 2E 92 00 20 11 50 04 00 2E 93 04 00 FE 93 FC 2F E0 81 08 00 1E 92 0C 00 2E 92 00 20 11 51 04 00 2E 93 04 00 FE 93 FC 2F E0 81 08 00 1E 92 0C 00 2E 92 00 20 11 52 04 00 2E 93 04 00 FE 93 FC 2F E0 81 08 00 1E 92 0C 00 2E 92 00 20 11 53 04 00 2E 93 04 00 FE 93
+
+SYMBOLS 5
+name=.math bind=LOCAL section=math value=0
+name=mathDiv bind=GLOBAL section=math value=72
+name=mathMul bind=GLOBAL section=math value=48
+name=mathSub bind=GLOBAL section=math value=24
+name=mathAdd bind=GLOBAL section=math value=0
+RELOCS 0

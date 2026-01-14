@@ -1,0 +1,9 @@
+/asembler
+/emulator
+/lex.yy.c
+/linker
+/parser.tab.c
+/parser.tab.h
+/pero.hex
+/program.hex
+/start.sh
