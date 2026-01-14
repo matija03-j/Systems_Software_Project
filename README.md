@@ -48,11 +48,20 @@ The project was developed as part of a university-level **Systems Software** cou
 
 ```
 .
-├── assembler/      # Assembly parsing and object file generation
-├── linker/         # Symbol resolution and relocation logic
-├── emulator/       # CPU, memory, and I/O emulation
-├── tests/          # Example assembly programs
-├── include/        # Shared headers and definitions
+├── src/
+  ├── assembler.cpp
+  ├── linker.cpp
+  └── emulator.cpp
+├── inc/
+  ├── assembler.hpp
+  ├── linker.hpp
+  └── emulator.hpp
+├── misc/
+  ├── flex
+  └── bison
+├── tests/
+├── my_tests
+├── makefile
 └── README.md
 ```
 
