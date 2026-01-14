@@ -57,8 +57,8 @@ The project was developed as part of a university-level **Systems Software** cou
   ├── linker.hpp
   └── emulator.hpp
 ├── misc/
-  ├── flex
-  └── bison
+  ├── lexer
+  └── parser
 ├── tests/
 ├── my_tests
 ├── makefile
